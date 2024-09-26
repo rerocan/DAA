@@ -1,0 +1,18 @@
+@startuml menghitungluaspersegipanjang
+title Menghitung Luas Persegi Panjang
+
+(*) -right-> "Masukan Nilai P"
+if "bukan angka" then 
+    --> [true] "Masukan Angka"
+endif
+    -right-> "Masukan Nilai L"
+if "bukan angka" then 
+    --> [true] "Masukan Angka"
+endif
+    -right-> "Luas = P x L"
+note bottom 
+    Rumus Menghitung Luas Persegi Panjang
+end note
+    -right-> "Tampilkan Hasil Luas"
+
+@enduml
