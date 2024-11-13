@@ -1,0 +1,25 @@
+@startuml
+
+actor Anggota
+actor Pustakawan
+
+usecase "Registrasi Anggota" as UC_Registrasi
+usecase "Pengecekan Ketersediaan Buku" as UC_Ketersediaan
+usecase "Peminjaman Buku" as UC_Peminjaman
+usecase "Pengembalian Buku" as UC_Pengembalian
+usecase "Notifikasi Status Registrasi" as UC_Notifikasi
+usecase "Manajemen Buku" as UC_Manajemen
+
+Anggota --> UC_Registrasi
+Anggota --> UC_Peminjaman
+Anggota --> UC_Pengembalian
+UC_Registrasi --> UC_Notifikasi : include
+UC_Peminjaman --> UC_Ketersediaan : include
+
+Pustakawan --> UC_Ketersediaan
+Pustakawan --> UC_Notifikasi
+Pustakawan --> UC_Peminjaman
+Pustakawan --> UC_Pengembalian
+Pustakawan --> UC_Manajemen
+
+@enduml
