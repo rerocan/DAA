@@ -1,0 +1,26 @@
+@startuml
+start
+:Admin membuka sistem;
+if (Pilih modul) then (Data Guru)
+  :Admin memilih modul Data Guru;
+  if (Apakah data guru baru?) then (Ya)
+    :Admin mengisi data guru baru;
+    :Simpan data ke sistem;
+  else (Tidak)
+    :Admin memilih data guru yang akan diperbarui;
+    :Melakukan perubahan data;
+  endif
+  :Kirim notifikasi ke guru;
+else (Data Kelas)
+  :Admin memilih modul Data Kelas;
+  if (Apakah ingin membuat kelas baru?) then (Ya)
+    :Admin mengisi data kelas baru;
+    :Simpan data ke sistem;
+  else (Tidak)
+    :Admin memilih data kelas yang akan diperbarui;
+    :Melakukan perubahan data;
+  endif
+endif
+:Proses selesai;
+stop
+@enduml

@@ -1,0 +1,13 @@
+@startuml
+actor Admin
+actor Guru
+
+usecase "Kelola Data Guru" as U1
+usecase "Notifikasi Perubahan Data" as U2
+usecase "Kelola Data Kelas" as U3
+
+Admin --> U1
+Admin --> U3
+Guru --> U2
+
+@enduml
