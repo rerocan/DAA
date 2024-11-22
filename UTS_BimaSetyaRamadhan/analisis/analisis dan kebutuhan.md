@@ -42,16 +42,11 @@ Data yang harus dikelola oleh sistem:
 
 1. **Data Guru**:
    - Nama lengkap.
-   - NIK/NIP.
-   - Tanggal lahir.
-   - Mata pelajaran yang diajarkan.
-   - Status kepegawaian (tetap/kontrak).
+   - Mengajar di kelas mana yang diajarkan.
 
 2. **Data Kelas**:
    - Nama kelas.
    - Tingkat (misalnya: Kelas 10, Kelas 11).
-   - Daftar guru pengampu.
-
 ---
 
 ## **4. Kebutuhan Perangkat Lunak**
