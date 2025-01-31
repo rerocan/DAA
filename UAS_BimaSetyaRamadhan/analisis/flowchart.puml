@@ -1,0 +1,15 @@
+@startuml
+start
+:Seniman Mendaftar;
+:Unggah Karya Seni;
+:Admin Menyeleksi Karya (Metode Greedy);
+if (Karya Terpilih?) then (Ya)
+  :Tambahkan ke Pameran;
+else (Tidak)
+  :Tolak Karya Seni;
+endif
+:Admin Menentukan Jadwal dan Lokasi;
+:Pengunjung Melihat Karya dan Membeli Tiket;
+:Admin Mengelola Keuangan;
+stop
+@enduml

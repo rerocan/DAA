@@ -1,0 +1,14 @@
+@startuml
+actor "Seniman" as Artist
+actor "Admin" as Admin
+actor "Pengunjung" as Visitor
+
+rectangle "Sistem Manajemen Pameran Seni" {
+  Artist --> (Mendaftar dan Mengunggah Karya Seni)
+  Admin --> (Menyeleksi Karya Seni)
+  Admin --> (Menentukan Jadwal dan Lokasi Pameran)
+  Visitor --> (Melihat Daftar Karya Seni)
+  Visitor --> (Membeli Tiket Online)
+  Admin --> (Mengelola Keuangan dan Laporan)
+}
+@enduml
